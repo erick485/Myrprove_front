@@ -17,14 +17,26 @@ body{
 	color:#2c2219; 
 }
 #hero{
-	background: url('../img/fondo5.png') center center no-repeat;
+	background: url('../img/fondo2.png') center center no-repeat;
 	/*background-size: cover;
 	max-height: 600px;
 	max-width: 100%;
 	height: 500px;*/
 	background-size: 100% 100%;
 	width: 100%;
-	height:500px;
+	height:700%;
 	opacity: 0.8;
 	position: absolute;
+}
+.tittle{
+	font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#marcas{
+ position: absolute;
+ top:800%;
+ width: 100%;
+ height: 500%;
 }
