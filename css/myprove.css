@@ -27,29 +27,25 @@ body{
 	opacity: 1;
 	position: absolute;
 }
-.tittle{
-	font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
 #productos{
   position: absolute;
-  top:1600%;
+  top:1400%;
  width: 100%;
- height: 400%;
+ height: 600%;
+ border-top: 1px solid #E5E4E4;
 }
 #servicio{
    position: absolute;
-   top:1200%;
+   top:2000%;
    width: 100%;
-   height: 400%;
-   background:#ededed;
+   height: 600%;
+ border-top: 1px solid #E5E4E4;
 }
 #marcas{
  position: absolute;
  top:800%;
  width: 100%;
- height: 400%;
+ height: 600%;
 }
 #boton{
 color: #fff;
@@ -70,7 +66,7 @@ footer {
 	background-size: cover;
 	color: #fff;
 	text-align: center;
-	top: 2000%;
+	top: 2600%;
 	position: absolute;
 	width: 100%;
 	height: 600%;
@@ -106,4 +102,18 @@ dl>dd>a{
 	background-color: rgba(77, 108, 92, 0.54);
     width: 100%;
     height: 100%;
+}
+.tittle{
+text-align: left;
+color: #777;
+font-size: 2em;
+font-weight: 400;
+letter-spacing: 0.08em;
+line-height: 1.2em;
+margin: 0 0 0.5em;
+text-transform: uppercase;
+}
+#p_marca{
+	margin: 0 0 10px;
+	line-height: 1.5em;
 }
