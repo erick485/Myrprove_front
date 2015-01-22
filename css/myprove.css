@@ -131,3 +131,12 @@ a:hover{
 text-decoration: none !important;
 color: #FFF !important;
 }
+#titulo{
+	text-align: center;
+color: #FFF;
+font-size: 2em;
+font-weight: 500;
+letter-spacing: 0.1em;
+line-height: 1.3em;
+margin: 0 0 0.5em;
+}
