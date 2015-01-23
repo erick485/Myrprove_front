@@ -52,7 +52,7 @@ body{
  width: 100%;
  height: 600%;
 }
-#boton{
+.boton{
 color: #fff;
 border: 1px solid #f3f5f5;
 background-color: rgba(255, 255, 255, .25);
@@ -149,4 +149,21 @@ margin: 0 0 0.5em;
 	background-color: transparent !important;
 	color: #AC9456 !important;
 	border: 1px solid #AC9456 !important;
+}
+
+#mineria{
+   background-color: rgba(215, 122, 45, 0.46);
+
+}
+
+#construccion{
+	background-color: rgba(45, 215, 196, 0.46);
+}
+
+#energia{
+	background-color: rgba(215, 206, 45, 0.46);
+}
+
+#petroleo{
+background-color: rgba(45, 144, 215, 0.46);
 }
