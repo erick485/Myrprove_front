@@ -12,26 +12,26 @@
 
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.paginate.js"></script>
-        <script type="text/javascript">
- $(function() {
-            
+    <script type="text/javascript">
+        $(function () {
+
             $("#demo5").paginate({
-                count       : 4,
-                start       : 1,
-                display     : 7,
-                border                  : true,
-                border_color            : '#fff',
-                text_color              : '#fff',
-                background_color        : 'black',  
-                border_hover_color      : '#ccc',
-                text_hover_color        : '#000',
-                background_hover_color  : '#fff', 
-                images                  : false,
-                mouse                   : 'press',
-                onChange                : function(page){
-                                            $('._current','#paginationdemo').removeClass('_current').hide();
-                                            $('#p'+page).addClass('_current').show();
-                                          }
+                count: 4,
+                start: 1,
+                display: 7,
+                border: true,
+                border_color: '#fff',
+                text_color: '#fff',
+                background_color: 'black',
+                border_hover_color: '#ccc',
+                text_hover_color: '#000',
+                background_hover_color: '#fff',
+                images: false,
+                mouse: 'press',
+                onChange: function (page) {
+                    $('._current', '#paginationdemo').removeClass('_current').hide();
+                    $('#p' + page).addClass('_current').show();
+                }
             });
         });
     </script>
@@ -54,7 +54,8 @@
             <ul class="nav navbar-nav navbar-right header_link" style="margin-top:14px;">
                 <li><a href="#" class="class_menu">Inicio</a></li>
                 <li><a href="#" class="class_menu">¿Quienes Somos?</a></li>
-                <li class="dropdown"><a href="#" class="class_menu"  class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
+                <li class="dropdown"><a href="#" class="class_menu" class="dropdown-toggle" data-toggle="dropdown">Productos
+                    <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="mineria.html">Minería</a></li>
                         <li><a href="energia">Energía</a></li>
@@ -71,305 +72,319 @@
     <div class="col-md-12" style="padding: 0px;">
         <div class="jumbotron" style="text-align: center;">
             <h1>Marketing stuff!</h1>
+
             <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus.</p>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="col-md-2">
-        <div class="row" style="border-right: 1px solid rgba(0,0,0,0.36);border-radius: 0px">
-            <h5><strong>MARCAS</strong></h5>
-            <ol class="list-unstyled" style="padding-left: 20px;">
-                <li><input type="checkbox" aria-label="..."> CATU</li>
-                <li><input type="checkbox" aria-label="..."> DLP LINEPRO</li>
-                <li><input type="checkbox" aria-label="..."> ETCHE</li>
-                <li><input type="checkbox" aria-label="..."> INDECO</li>
-                <li><input type="checkbox" aria-label="..."> NOVAX</li>
-                <li><input type="checkbox" aria-label="..."> PANOPLY</li>
-            </ol>
-            <br>
-            <h5><strong>PRODUCTOS</strong></h5>
-            <ol class="list-unstyled" style="padding-left: 20px;">
-                <li><input type="checkbox" aria-label="..."> BOTAS</li>
-                <li><input type="checkbox" aria-label="..."> CABLES</li>
-                <li><input type="checkbox" aria-label="..."> GUANTES</li>
-            </ol>
+<div class="col-md-2">
+    <div class="row" style="border-right: 1px solid rgba(0,0,0,0.36);border-radius: 0px">
+        <h5><strong>MARCAS</strong></h5>
+        <ol class="list-unstyled" style="padding-left: 20px;">
+            <li><input type="checkbox" aria-label="..."> CATU</li>
+            <li><input type="checkbox" aria-label="..."> DLP LINEPRO</li>
+            <li><input type="checkbox" aria-label="..."> ETCHE</li>
+            <li><input type="checkbox" aria-label="..."> INDECO</li>
+            <li><input type="checkbox" aria-label="..."> NOVAX</li>
+            <li><input type="checkbox" aria-label="..."> PANOPLY</li>
+        </ol>
+        <br>
+        <h5><strong>PRODUCTOS</strong></h5>
+        <ol class="list-unstyled" style="padding-left: 20px;">
+            <li><input type="checkbox" aria-label="..."> BOTAS</li>
+            <li><input type="checkbox" aria-label="..."> CABLES</li>
+            <li><input type="checkbox" aria-label="..."> GUANTES</li>
+        </ol>
+    </div>
+</div>
+<div id="paginationdemo" class="col-md-10">
+<div id="p1" class="pagedemo _current ui five column grid">
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Sobreguantes</a>
+
+                <div class="meta">CATU</div>
+            </div>
+            <div class="extra content">
+                <a>talla 9</a>
+                <br>
+                <a>guantes B.tension</a>
+                <br>
+                <a>modelo:CG-98B</a>
+            </div>
         </div>
     </div>
-    <div id="paginationdemo"  class="col-md-10">
-      <div id="p1"  class="pagedemo _current ui five column grid">
-          <div class="column">
-              <div class="ui segement doubling cards">
-                  <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Sobreguantes</a>
-                            <div class="meta">CATU</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 9</a>
-                            <br>
-                            <a>guantes B.tension</a>
-                            <br>
-                            <a>modelo:CG-98B</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
+</div>
 
-         <div class="column">
-              <div class="ui segement doubling cards">
-                   <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante1.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Sobreguantes</a>
-                            <div class="meta">CATU</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 10</a>
-                            <br>
-                            <a>guantes B.tension</a>
-                            <br>
-                            <a>modelo:CG-98C</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-         <div class="column">
-              <div class="ui segement doubling cards">
-                   <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante2.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Sobreguantes</a>
-                            <div class="meta">CATU</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 11</a>
-                            <br>
-                            <a>guantes B.tension</a>
-                            <br>
-                            <a>modelo:CG-98D</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante1.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Sobreguantes</a>
 
-      <div class="column">
-              <div class="ui segement doubling cards">
-                   <div class="card" >
-                        <div class="image">
-                            <img src="img/productos/guante3.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Sobreguantes</a>
-                            <div class="meta">CATU</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 10</a>
-                            <br>
-                            <a>guantes 10-20-30 KV</a>
-                            <br>
-                            <a>modelo:CG-99C</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-
-          <div class="column">
-              <div class="ui segement doubling cards">
-                   <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante4.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Sobreguantes</a>
-                            <div class="meta">CATU</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 11</a>
-                            <br>
-                            <a>guantes 15-20-30 KV</a>
-                            <br>
-                            <a>modelo:CG-99D</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-
-          <div class="column">
-              <div class="ui segement doubling cards">
-                  <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante5.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Guante Aislante</a>
-                            <div class="meta">DPL LINEPRO</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 9-10</a>
-                            <br>
-                            <a><= 2500 V</a>
-                            <br>
-                            <a>modelo:CL 00</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-          <div class="column">
-              <div class="ui segement doubling cards">
-                  <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante6.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Guante Aislante</a>
-                            <div class="meta">DPL LINEPRO</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 8-9-10</a>
-                            <br>
-                            <a><= 5000 V</a>
-                            <br>
-                            <a>modelo:CL 0</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-          <div class="column">
-              <div class="ui segement doubling cards">
-                  <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante7.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Guante Aislante</a>
-                            <div class="meta">DPL LINEPRO</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 9-10</a>
-                            <br>
-                            <a><= 10000 V</a>
-                            <br>
-                            <a>modelo:CL 1</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-          <div class="column">
-              <div class="ui segement doubling cards">
-                   <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante8.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Guante Aislante</a>
-                            <div class="meta">DPL LINEPRO | NOVAX</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 9-10-11</a>
-                            <br>
-                            <a><= 20000 V</a>
-                            <br>
-                            <a>modelo:CL 2</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-          <div class="column">
-              <div class="ui segement doubling cards">
-                  <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante9.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Guante Aislante</a>
-                            <div class="meta">NOVAX</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 9-10-11</a>
-                            <br>
-                            <a><= 20000 V</a>
-                            <br>
-                            <a>modelo:CL 2</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-      </div>
-      <div id="p2"  class="pagedemo _current ui five column grid" style="display:none;">
-          <div class="column">
-              <div class="ui segement doubling cards">
-                  <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante7.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Guante Aislante</a>
-                            <div class="meta">DPL LINEPRO</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 9-10</a>
-                            <br>
-                            <a><= 10000 V</a>
-                            <br>
-                            <a>modelo:CL 1</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-          <div class="column">
-              <div class="ui segement doubling cards">
-                   <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante8.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Guante Aislante</a>
-                            <div class="meta">DPL LINEPRO | NOVAX</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 9-10-11</a>
-                            <br>
-                            <a><= 20000 V</a>
-                            <br>
-                            <a>modelo:CL 2</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-          <div class="column">
-              <div class="ui segement doubling cards">
-                  <div class="card">
-                        <div class="image">
-                            <img src="img/productos/guante9.jpg">
-                        </div>
-                        <div class="content">
-                            <a class="header">Guante Aislante</a>
-                            <div class="meta">NOVAX</div>
-                        </div>
-                        <div class="extra content">
-                            <a>talla 9-10-11</a>
-                            <br>
-                            <a><= 20000 V</a>
-                            <br>
-                            <a>modelo:CL 2</a>
-                        </div>
-                    </div>
-              </div>
-          </div>
-      </div >
-        <div id="demo5">                   
-                </div>
-
-      
+                <div class="meta">CATU</div>
+            </div>
+            <div class="extra content">
+                <a>talla 10</a>
+                <br>
+                <a>guantes B.tension</a>
+                <br>
+                <a>modelo:CG-98C</a>
+            </div>
+        </div>
     </div>
+</div>
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante2.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Sobreguantes</a>
+
+                <div class="meta">CATU</div>
+            </div>
+            <div class="extra content">
+                <a>talla 11</a>
+                <br>
+                <a>guantes B.tension</a>
+                <br>
+                <a>modelo:CG-98D</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante3.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Sobreguantes</a>
+
+                <div class="meta">CATU</div>
+            </div>
+            <div class="extra content">
+                <a>talla 10</a>
+                <br>
+                <a>guantes 10-20-30 KV</a>
+                <br>
+                <a>modelo:CG-99C</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante4.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Sobreguantes</a>
+
+                <div class="meta">CATU</div>
+            </div>
+            <div class="extra content">
+                <a>talla 11</a>
+                <br>
+                <a>guantes 15-20-30 KV</a>
+                <br>
+                <a>modelo:CG-99D</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante5.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Guante Aislante</a>
+
+                <div class="meta">DPL LINEPRO</div>
+            </div>
+            <div class="extra content">
+                <a>talla 9-10</a>
+                <br>
+                <a><= 2500 V</a>
+                <br>
+                <a>modelo:CL 00</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante6.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Guante Aislante</a>
+
+                <div class="meta">DPL LINEPRO</div>
+            </div>
+            <div class="extra content">
+                <a>talla 8-9-10</a>
+                <br>
+                <a><= 5000 V</a>
+                <br>
+                <a>modelo:CL 0</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante7.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Guante Aislante</a>
+
+                <div class="meta">DPL LINEPRO</div>
+            </div>
+            <div class="extra content">
+                <a>talla 9-10</a>
+                <br>
+                <a><= 10000 V</a>
+                <br>
+                <a>modelo:CL 1</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante8.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Guante Aislante</a>
+
+                <div class="meta">DPL LINEPRO | NOVAX</div>
+            </div>
+            <div class="extra content">
+                <a>talla 9-10-11</a>
+                <br>
+                <a><= 20000 V</a>
+                <br>
+                <a>modelo:CL 2</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="column">
+    <div class="ui segement doubling cards">
+        <div class="card">
+            <div class="image">
+                <img src="img/productos/guante9.jpg">
+            </div>
+            <div class="content">
+                <a class="header">Guante Aislante</a>
+
+                <div class="meta">NOVAX</div>
+            </div>
+            <div class="extra content">
+                <a>talla 9-10-11</a>
+                <br>
+                <a><= 20000 V</a>
+                <br>
+                <a>modelo:CL 2</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="p2" class="pagedemo _current ui five column grid" style="display:none;">
+    <div class="column">
+        <div class="ui segement doubling cards">
+            <div class="card">
+                <div class="image">
+                    <img src="img/productos/guante7.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">Guante Aislante</a>
+
+                    <div class="meta">DPL LINEPRO</div>
+                </div>
+                <div class="extra content">
+                    <a>talla 9-10</a>
+                    <br>
+                    <a><= 10000 V</a>
+                    <br>
+                    <a>modelo:CL 1</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui segement doubling cards">
+            <div class="card">
+                <div class="image">
+                    <img src="img/productos/guante8.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">Guante Aislante</a>
+
+                    <div class="meta">DPL LINEPRO | NOVAX</div>
+                </div>
+                <div class="extra content">
+                    <a>talla 9-10-11</a>
+                    <br>
+                    <a><= 20000 V</a>
+                    <br>
+                    <a>modelo:CL 2</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui segement doubling cards">
+            <div class="card">
+                <div class="image">
+                    <img src="img/productos/guante9.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">Guante Aislante</a>
+
+                    <div class="meta">NOVAX</div>
+                </div>
+                <div class="extra content">
+                    <a>talla 9-10-11</a>
+                    <br>
+                    <a><= 20000 V</a>
+                    <br>
+                    <a>modelo:CL 2</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="demo5">
+</div>
+
+
+</div>
 </div>
 <!--<footer>
     <div class="container" id="">
