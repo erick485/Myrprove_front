@@ -7,10 +7,34 @@
     <link rel="stylesheet" type="text/css" href="css/pygments-manni.css">
     <link rel="stylesheet" type="text/css" href="css/semantic.css">
     <link rel="stylesheet" type="text/css" href="css/myprove.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/jquery.js"></script>
 
     <script type="text/javascript" src="js/bootstrap.js"></script>
-
+    <script type="text/javascript" src="js/jquery.paginate.js"></script>
+        <script type="text/javascript">
+ $(function() {
+            
+            $("#demo5").paginate({
+                count       : 4,
+                start       : 1,
+                display     : 7,
+                border                  : true,
+                border_color            : '#fff',
+                text_color              : '#fff',
+                background_color        : 'black',  
+                border_hover_color      : '#ccc',
+                text_hover_color        : '#000',
+                background_hover_color  : '#fff', 
+                images                  : false,
+                mouse                   : 'press',
+                onChange                : function(page){
+                                            $('._current','#paginationdemo').removeClass('_current').hide();
+                                            $('#p'+page).addClass('_current').show();
+                                          }
+            });
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -72,8 +96,8 @@
             </ol>
         </div>
     </div>
-    <div class="col-md-10">
-      <div class="ui five column grid">
+    <div id="paginationdemo"  class="col-md-10">
+      <div id="p1"  class="pagedemo _current ui five column grid">
           <div class="column">
               <div class="ui segement doubling cards">
                   <div class="card">
@@ -279,7 +303,70 @@
               </div>
           </div>
       </div>
-
+      <div id="p2"  class="pagedemo _current ui five column grid" style="display:none;">
+          <div class="column">
+              <div class="ui segement doubling cards">
+                  <div class="card">
+                        <div class="image">
+                            <img src="img/productos/guante7.jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Guante Aislante</a>
+                            <div class="meta">DPL LINEPRO</div>
+                        </div>
+                        <div class="extra content">
+                            <a>talla 9-10</a>
+                            <br>
+                            <a><= 10000 V</a>
+                            <br>
+                            <a>modelo:CL 1</a>
+                        </div>
+                    </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="ui segement doubling cards">
+                   <div class="card">
+                        <div class="image">
+                            <img src="img/productos/guante8.jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Guante Aislante</a>
+                            <div class="meta">DPL LINEPRO | NOVAX</div>
+                        </div>
+                        <div class="extra content">
+                            <a>talla 9-10-11</a>
+                            <br>
+                            <a><= 20000 V</a>
+                            <br>
+                            <a>modelo:CL 2</a>
+                        </div>
+                    </div>
+              </div>
+          </div>
+          <div class="column">
+              <div class="ui segement doubling cards">
+                  <div class="card">
+                        <div class="image">
+                            <img src="img/productos/guante9.jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Guante Aislante</a>
+                            <div class="meta">NOVAX</div>
+                        </div>
+                        <div class="extra content">
+                            <a>talla 9-10-11</a>
+                            <br>
+                            <a><= 20000 V</a>
+                            <br>
+                            <a>modelo:CL 2</a>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </div >
+        <div id="demo5">                   
+                </div>
 
       
     </div>
