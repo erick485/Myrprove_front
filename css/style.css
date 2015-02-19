@@ -3,7 +3,7 @@
     position:relative;
     color:#a5a5a5;
     font-size:small;   
-	width:100%;
+	
 }
 .jPaginate a{
     line-height:15px;
@@ -29,6 +29,15 @@ ul.jPag-pages{
     list-style-type:none;
     margin:0px 0px 0px 0px;
     padding:0px;
+}
+#p2{
+    margin-top: -1rem;
+}
+#demo5{
+    margin-left: 45%;
+}
+#demo5 .jPag-pages{
+    width: 48px !important;
 }
 ul.jPag-pages li{
     display:inline;
